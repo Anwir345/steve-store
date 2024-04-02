@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Giỏ hàng Steve Store</title>
+
+        <!-- Embed fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/resets.css" />
+
+        <!-- Grid CSS -->
+        <link rel="stylesheet" href="./assets/css/grid.css" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+    </head>
+    <body>
+        <!-- ========== Header ========== -->
+        <header class="header fixed-header">
+            <!-- Header top -->
+            <div class="header-top-wrap">
+                <div class="container">
+                    <div class="header-top__inner">
+                        <p class="header-top__left col l-8">
+                            Chào mừng bạn đã đến với Steve Store !
+                        </p>
+
+                        <div class="header-top__right col l-4">
+                            <a href="#!" class="header-top__icon"
+                                ><i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#!" class="header-top__icon"
+                                ><i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#!" class="header-top__icon"
+                                ><i class="fa-brands fa-google-plus-g"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header main -->
+            <div class="header-main-wrap">
+                <div class="container">
+                    <div class="header-main__inner">
+                        <figure class="header-main__logo-wrap col l-3">
+                            <img
+                                src="./assets/img/logo.webp"
+                                alt=""
+                                class="header-main__logo"
+                            />
+                        </figure>
+
+                        <form
+                            action=""
+                            method="post"
+                            class="header__search-form col l-6"
+                        >
+                            <input
+                                type="text"
+                                name=""
+                                id=""
+                                placeholder="Tìm kiếm ..."
+                                class="header__search-input"
+                            />
+                            <input
+                                type="submit"
+                                value="Tìm kiếm"
+                                class="header__search-submit"
+                            />
+
+                            <span class="arrow-left-search"></span>
+                        </form>
+
+                        <!-- Account & Cart -->
+                        <div class="account-cart col l-3">
+                            <div class="account col l-7">
+                                <ul>
+                                    <li class="account-item">
+                                        <a
+                                            href="#!"
+                                            class="account-link account-link__separate"
+                                        >
+                                            Tài khoản
+                                        </a>
+                                    </li>
+                                    <li class="account-item">
+                                        <a href="#!" class="account-link">
+                                            Đăng ký
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cart col l-5">
+                                <div class="cart-contain">
+                                    <span class="cart__heading">Giỏ hàng</span>
+                                    <span class="cart-qty">0</span>
+                                    <div class="cart-content">
+                                        <div class="cart-list">
+                                            <!-- <div class="cart-item">
+                                                <div class="cart-item__remove">
+                                                    <i
+                                                        class="fa-solid fa-circle-xmark"
+                                                    ></i>
+                                                </div>
+
+                                                <figure
+                                                    class="cart-item__img-wrap"
+                                                >
+                                                    <img
+                                                        src="./assets/img/man-shoes/shoes-1.png"
+                                                        alt=""
+                                                        class="cart-item__img"
+                                                    />
+                                                </figure>
+
+                                                <div class="cart-item__info">
+                                                    <h3 class="cart-item__name">
+                                                        Giày nike court vision
+                                                        low next nature 'sail
+                                                        dark beetroot'
+                                                        fb8942-133
+                                                    </h3>
+
+                                                    <span
+                                                        class="cart-item__price"
+                                                    >
+                                                        999999
+                                                    </span>
+
+                                                    <div
+                                                        class="cart-item__quantity"
+                                                    >
+                                                        <button
+                                                            class="item-quantity__down"
+                                                        >
+                                                            -
+                                                        </button>
+                                                        <div
+                                                            class="number__quantity"
+                                                        >
+                                                            10
+                                                        </div>
+                                                        <button
+                                                            class="item-quantity__up"
+                                                        >
+                                                            +
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                        </div>
+
+                                        <div class="cart-total">
+                                            <span class="cart-total__title">
+                                                Thành tiền:
+                                            </span>
+
+                                            <span class="cart-total__price">
+                                                0 VND
+                                            </span>
+                                        </div>
+
+                                        <div class="cart-bottom">
+                                            <a
+                                                href="#!"
+                                                class="btn cart-bottom__link"
+                                            >
+                                                GIỎ HÀNG
+                                            </a>
+
+                                            <button
+                                                class="btn cart-bottom__pay"
+                                            >
+                                                THANH TOÁN
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header navbar -->
+            <div class="header-navbar-wrap">
+                <div class="container">
+                    <div class="header-navbar__inner">
+                        <nav class="header-navbar col l-9">
+                            <ul class="navbar__list">
+                                <li class="navbar-item">
+                                    <a href="#!" class="nav-link">
+                                        <i
+                                            class="fa-solid fa-house-chimney"
+                                        ></i>
+                                        Giới thiệu
+                                    </a>
+                                </li>
+                                <li class="navbar-item">
+                                    <a href="#!" class="nav-link">
+                                        Trang chủ
+                                    </a>
+                                </li>
+                                <li class="navbar-item">
+                                    <a href="#!" class="nav-link">Tin tức</a>
+                                </li>
+                                <li class="navbar-item">
+                                    <a href="#!" class="nav-link">
+                                        Sản phẩm
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </a>
+
+                                    <ul class="subnav">
+                                        <li class="subnav__item">
+                                            <a href="#!" class="subnav-link">
+                                                JORDAN
+                                            </a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="#!" class="subnav-link">
+                                                ADIDAS
+                                            </a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="#!" class="subnav-link">
+                                                NIKE
+                                            </a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="#!" class="subnav-link">
+                                                MLB
+                                            </a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="#!" class="subnav-link">
+                                                DOMA
+                                            </a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="#!" class="subnav-link">
+                                                DÉP
+                                            </a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="#!" class="subnav-link">
+                                                SALE TẾT 2023
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navbar-item">
+                                    <a href="#!" class="nav-link">Liên hệ</a>
+                                </li>
+                                <li class="navbar-item">
+                                    177 Phố Huế - Hai Bà Trưng - HN
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <p class="header-navbar__right col l-3">
+                            Hotline : 0858 28 27 28
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="breadcrumb">
+            <div class="container">
+                <ul class="breadcrumb-list">
+                    <li class="breadcrumb-item">
+                        <a href="./index.html" class="breadcrumb-item__link">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item">Giỏ hàng</li>
+                </ul>
+            </div>
+        </div>
+
+        <main>
+            <div class="container">
+                <div class="cart-head">
+                    <div class="cart-head__item" style="width: 17%">
+                        ẢNH SẢN PHẨM
+                    </div>
+                    <div class="cart-head__item" style="width: 33%">
+                        TÊN SẢN PHẨM
+                    </div>
+                    <div class="cart-head__item" style="width: 15%">
+                        ĐƠN GIÁ
+                    </div>
+                    <div class="cart-head__item" style="width: 14%">
+                        SỐ LƯỢNG
+                    </div>
+                    <div class="cart-head__item" style="width: 15%">
+                        THÀNH TIỀN
+                    </div>
+                    <div class="cart-head__item" style="width: 6%">XÓA</div>
+                </div>
+
+                <div class="cart-body">
+                    <div class="item-cart">
+                        <div class="item-cart__img-wrap" style="width: 17%">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/man-shoes/shoes-1.png"
+                                    alt=""
+                                    class="item-cart__img"
+                                />
+                            </a>
+                        </div>
+
+                        <div class="item-cart__name-wrap" style="width: 33%">
+                            <h3>
+                                <a href="#!" class="item-cart__name">
+                                    Nike Court Legacy Lift 'White Hemp'
+                                    DM7590-100
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="item-cart__price-wrap" style="width: 15%">
+                            <span class="item-cart__price"> 2.650.000₫ </span>
+                        </div>
+
+                        <div
+                            class="item-cart__quantity-wrap"
+                            style="width: 14%"
+                        >
+                            <button class="item-cart__quantity-down">-</button>
+
+                            <span class="item-cart__quantity">1</span>
+                            <button class="item-cart__quantity-up">+</button>
+                        </div>
+
+                        <div class="item-cart__total-wrap" style="width: 15%">
+                            <span class="item-cart__total"> 2.650.000₫ </span>
+                        </div>
+
+                        <div class="item-cart__remove-wrap" style="width: 6%">
+                            <i
+                                class="fa-regular fa-trash-can item-cart__remove"
+                            ></i>
+                        </div>
+                    </div>
+
+                    <div class="item-cart">
+                        <div class="item-cart__img-wrap" style="width: 17%">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/women-shoes/women-shoe-02.png"
+                                    alt=""
+                                    class="item-cart__img"
+                                />
+                            </a>
+                        </div>
+
+                        <div class="item-cart__name-wrap" style="width: 33%">
+                            <h3>
+                                <a href="#!" class="item-cart__name">
+                                    Giày chính hãng air force 1 shadow
+                                    'multicolor' - ci0919-118
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="item-cart__price-wrap" style="width: 15%">
+                            <span class="item-cart__price">3.800.000₫</span>
+                        </div>
+
+                        <div
+                            class="item-cart__quantity-wrap"
+                            style="width: 14%"
+                        >
+                            <button class="item-cart__quantity-down">-</button>
+
+                            <span class="item-cart__quantity">1</span>
+                            <button class="item-cart__quantity-up">+</button>
+                        </div>
+
+                        <div class="item-cart__total-wrap" style="width: 15%">
+                            <span class="item-cart__total">3.800.000₫</span>
+                        </div>
+
+                        <div class="item-cart__remove-wrap" style="width: 6%">
+                            <i
+                                class="fa-regular fa-trash-can item-cart__remove"
+                            ></i>
+                        </div>
+                    </div>
+
+                    <div class="item-cart">
+                        <div class="item-cart__img-wrap" style="width: 17%">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/women-shoes/women-shoe-05.png"
+                                    alt=""
+                                    class="item-cart__img"
+                                />
+                            </a>
+                        </div>
+
+                        <div class="item-cart__name-wrap" style="width: 33%">
+                            <h3 class="item-cart__name">
+                                <a href="#!" class="item-cart__name">
+                                    Giày chính hãng air force 1 low anniversary
+                                    'white black' - dq7658-100
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="item-cart__price-wrap" style="width: 15%">
+                            <span class="item-cart__price">4.250.000₫</span>
+                        </div>
+
+                        <div
+                            class="item-cart__quantity-wrap"
+                            style="width: 14%"
+                        >
+                            <button class="item-cart__quantity-down">-</button>
+
+                            <span class="item-cart__quantity">1</span>
+                            <button class="item-cart__quantity-up">+</button>
+                        </div>
+
+                        <div class="item-cart__total-wrap" style="width: 15%">
+                            <span class="item-cart__total">4.250.000₫</span>
+                        </div>
+
+                        <div class="item-cart__remove-wrap" style="width: 6%">
+                            <i
+                                class="fa-regular fa-trash-can item-cart__remove"
+                            ></i>
+                        </div>
+                    </div>
+
+                    <div class="item-cart">
+                        <div class="item-cart__img-wrap" style="width: 17%">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/man-shoes/shoes-6.png"
+                                    alt=""
+                                    class="item-cart__img"
+                                />
+                            </a>
+                        </div>
+
+                        <div class="item-cart__name-wrap" style="width: 33%">
+                            <h3>
+                                <a href="#!" class="item-cart__name">
+                                    Giày chính hãng air force 1 low anniversary
+                                    'sail malachite' - dq7582-101
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="item-cart__price-wrap" style="width: 15%">
+                            <span class="item-cart__price">4.500.000₫</span>
+                        </div>
+
+                        <div
+                            class="item-cart__quantity-wrap"
+                            style="width: 14%"
+                        >
+                            <button class="item-cart__quantity-down">-</button>
+
+                            <span class="item-cart__quantity">1</span>
+                            <button class="item-cart__quantity-up">+</button>
+                        </div>
+
+                        <div class="item-cart__total-wrap" style="width: 15%">
+                            <span class="item-cart__total">4.500.000₫</span>
+                        </div>
+
+                        <div class="item-cart__remove-wrap" style="width: 6%">
+                            <i
+                                class="fa-regular fa-trash-can item-cart__remove"
+                            ></i>
+                        </div>
+                    </div>
+
+                    <div class="item-cart">
+                        <div class="item-cart__img-wrap" style="width: 17%">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/man-shoes/shoes-8.png"
+                                    alt=""
+                                    class="item-cart__img"
+                                />
+                            </a>
+                        </div>
+
+                        <div class="item-cart__name-wrap" style="width: 33%">
+                            <h3>
+                                <a href="#!" class="item-cart__name">
+                                    Giày chính hãng cats and sofa pink
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="item-cart__price-wrap" style="width: 15%">
+                            <span class="item-cart__price">1.550.000₫</span>
+                        </div>
+
+                        <div
+                            class="item-cart__quantity-wrap"
+                            style="width: 14%"
+                        >
+                            <button class="item-cart__quantity-down">-</button>
+
+                            <span class="item-cart__quantity">1</span>
+                            <button class="item-cart__quantity-up">+</button>
+                        </div>
+
+                        <div class="item-cart__total-wrap" style="width: 15%">
+                            <span class="item-cart__total">1.550.000₫</span>
+                        </div>
+
+                        <div class="item-cart__remove-wrap" style="width: 6%">
+                            <i
+                                class="fa-regular fa-trash-can item-cart__remove"
+                            ></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-cart">
+                    <p class="bottom-cart__title" style="width: 65%">
+                        Tổng tiền
+                    </p>
+
+                    <p class="bottom-cart__price" style="width: 35%">
+                        16.750.000₫
+                    </p>
+                </div>
+                <div class="cart-checkout">
+                    <div class="cart-checkout__left">
+                        <button class="cart-checkout__btn">
+                            Tiếp tục mua hàng
+                        </button>
+                        <button class="cart-checkout__btn">
+                            Xóa toàn bộ đơn hàng
+                        </button>
+                    </div>
+
+                    <div class="art-checkout__right">
+                        <button class="cart-checkout__btn">
+                            TIẾN HÀNH ĐẶT HÀNG
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-inner">
+                    <div class="footer-top">
+                        <div class="footer-top__column">
+                            <h3 class="footer-heading">THÔNG TIN CÔNG TY</h3>
+                            <ul class="footer-column__list">
+                                <li>
+                                    <a href="#!" class="footer-column__link">
+                                        Tìm kiếm
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer-column__link">
+                                        Giới thiệu
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-top__column">
+                            <h3 class="footer-heading">ĐIỀU KHOẢN</h3>
+                            <ul class="footer-column__list">
+                                <li>
+                                    <a href="#!" class="footer-column__link">
+                                        Điều khoản sử dụng
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer-column__link">
+                                        Điều khoản giao dịch
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="footer-column__link">
+                                        Dịch vụ tiện ích
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="footer-column__link">
+                                        Quyền sở hữu trí tuệ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-top__column">
+                            <h3 class="footer-heading">HƯỚNG DẪN</h3>
+                            <ul class="footer-column__list">
+                                <li>
+                                    <a href="#!" class="footer-column__link">
+                                        Hướng dẫn mua hàng
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer-column__link">
+                                        Giao nhận và thanh toán
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="footer-column__link">
+                                        Đổi trả và bảo hành
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="footer-column__link">
+                                        Đăng ký thành viên
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-top__column">
+                            <h3 class="footer-heading">
+                                THEO DÕI CHÚNG TÔI TRÊN
+                            </h3>
+                            <ul class="footer-column__list">
+                                <li class="footer-column__item">
+                                    <i
+                                        class="fa-brands fa-facebook footer-column__icon"
+                                    ></i>
+                                    <a href="#!" class="footer-column__link">
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="footer-column__item">
+                                    <i
+                                        class="fa-brands fa-instagram footer-column__icon"
+                                    ></i>
+                                    <a href="#!" class="footer-column__link">
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li class="footer-column__item">
+                                    <i
+                                        class="fa-brands fa-tiktok footer-column__icon"
+                                    ></i>
+                                    <a href="#!" class="footer-column__link">
+                                        Tiktok
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-mid">
+                        <div class="payment__methods">
+                            <h3 class="footer-heading">HỖ TRỢ THANH TOÁN</h3>
+                            <ul class="list-payment">
+                                <li class="payment-method">
+                                    <img
+                                        src="./assets/img/payment/payment_1.png"
+                                        alt=""
+                                        class="payment-method__img"
+                                    />
+                                </li>
+                                <li class="payment-method">
+                                    <img
+                                        src="./assets/img/payment/payment_2.png"
+                                        alt=""
+                                        class="payment-method__img"
+                                    />
+                                </li>
+                                <li class="payment-method">
+                                    <img
+                                        src="./assets/img/payment/payment_3.png"
+                                        alt=""
+                                        class="payment-method__img"
+                                    />
+                                </li>
+                                <li class="payment-method">
+                                    <img
+                                        src="./assets/img/payment/payment_4.png"
+                                        alt=""
+                                        class="payment-method__img"
+                                    />
+                                </li>
+                                <li class="payment-method">
+                                    <img
+                                        src="./assets/img/payment/payment_5.png"
+                                        alt=""
+                                        class="payment-method__img"
+                                    />
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="customer__care">
+                            <h3 class="footer-heading">GIẢI ĐÁP THẮC MẮC</h3>
+
+                            <div class="customer-care__content">
+                                <div class="customer-care__img-wrap">
+                                    <img
+                                        src="./assets/img/customer_care_image.png"
+                                        alt=""
+                                        class="customer-care__img"
+                                    />
+                                </div>
+
+                                <ul class="list-customer-care">
+                                    <li class="item-customer-care">
+                                        <p class="customer-care-title">
+                                            Tư vấn miễn phí (9h-22h)
+                                        </p>
+
+                                        <p class="customer-care-phone">
+                                            0858 28 27 28
+                                        </p>
+                                    </li>
+
+                                    <li class="item-customer-care">
+                                        <p class="customer-care-title">
+                                            Góp ý, phản ánh
+                                        </p>
+
+                                        <p class="customer-care-phone">
+                                            0943 969 969
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <h3 class="footer-heading">STEVE STORE</h3>
+                        <p class="store-address">
+                            177 - Phố Huế - Hai Bà Trưng - Hà Nội
+                        </p>
+
+                        <p class="store-phone">Điện thoại : 0858.28.27.28</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-cpy">
+                <div class="footer-cpy__inner">
+                    <div class="container">
+                        <p class="footer-cpy-text">
+                            &copy Bản quyền thuộc về STEVE STORE | Cung cấp bởi
+                            Bizweb
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
